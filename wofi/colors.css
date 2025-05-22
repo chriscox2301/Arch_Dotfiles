@@ -1,0 +1,72 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12pt;
+}
+
+window {
+    background-color: #1e1e2e; /* base */
+    border: 2px solid #89b4fa; /* blue */
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#input {
+    border: none;
+    background-color: #89b4fa; /* blue */
+    color: #1e1e2e; /* base (contrast) */
+    border-radius: 3px;
+    margin: 0px 0px 10px 0px;
+    padding: 8px;
+}
+
+#inner-box {
+    background-color: #1e1e2e; /* base */
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#outer-box{
+    background-color: #1e1e2e; /* base */
+    border: 4px solid #89b4fa;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#scroll {
+    background-color: #1e1e2e; /* base */
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#text {
+    color: #cdd6f4; /* text */
+    margin: 0px 0px 0px 10px;
+}
+
+#entry {
+    background-color: #1e1e2e; /* base */
+    color: #cdd6f4; /* text */
+    border: none;
+    margin: 2px 0px;
+    padding: 6px;
+    border-radius: 8px;
+    transition: all 0.15s ease;
+}
+
+#entry:selected {
+    background-color: #89b4fa; /* blue */
+    color: #1e1e2e; /* base */
+}
+
+#entry.urgent {
+    background-color: #f38ba8; /* red */
+    color: #1e1e2e;
+}
+
+#entry:hover {
+    background-color: #cba6f7; /* mauve */
+    color: #1e1e2e;
+}

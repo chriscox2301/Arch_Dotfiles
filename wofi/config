@@ -1,0 +1,14 @@
+show-icons=false
+prompt=> 
+hide-scroll=true
+no-history=true
+width=350
+height=400
+location=center
+allow_markup=true
+allow_images=false
+insensitive=true
+sort_order=history
+gtk_dark=true
+term=kitty
+style=/home/chris/.config/wofi/colors.css

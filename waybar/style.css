@@ -1,0 +1,102 @@
+@import '/home/chris/.config/waybar/mocha.css';
+
+* {
+  font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  min-height: 0; /* voorkomt ongewenste verticale padding */
+}
+
+window#waybar {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background-color: rgba(30, 30, 46, 0.85); /* base met transparantie */
+  border-radius: 12px;
+  margin: 6px 8px; /* lucht rondom de bar zelf */
+  padding: 6px 12px;
+  border: 1px solid rgba(203, 166, 247, 0.2); /* lichte border in mauve */
+}
+
+#workspaces button {
+  color: @rosewater;
+  padding: 4px 8px;
+  margin: 0 2px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+#workspaces button.focused {
+  font-weight: bold;
+  background-color: @surface0;
+  text-decoration: none;
+  color: @text;
+}
+
+#workspaces button:hover {
+  background-color: @surface1;
+}
+
+#pulseaudio {
+  color: @red;
+  padding: 0 10px;
+}
+
+#network {
+  color: @peach;
+  padding: 0 10px;
+}
+
+#temperature {
+  color: @yellow;
+  padding: 0 10px;
+}
+
+#battery {
+  color: @green;
+  padding: 0 10px;
+}
+
+#clock {
+  color: @sapphire;
+  padding: 0 10px;
+}
+
+#custom-logo,
+#window {
+  color: @teal;
+  padding: 0 10px;
+}
+
+#custom-powermenu {
+  color: @lavender;
+  padding: 0 10px;
+}
+
+#battery.charging,
+#battery.plugged {
+  font-style: italic;
+}
+
+#battery.critical:not(.charging) {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes blink {
+  to {
+    color: @base;
+  }
+}

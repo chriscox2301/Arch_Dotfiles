@@ -30,7 +30,7 @@ config/
 Clone the repo:
 
 ```bash
-git clone git@github.com:<your-username>/<your-repo>.git ~/.config
+git clone https://github.com/chriscox2301/Arch_Dotfiles.git
 ```
 Install required packages (example, adjust to your setup):
 ```bash
